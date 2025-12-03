@@ -23,7 +23,7 @@ function StudentList() {
     try {
       setLoading(true)
       // Call our backend API
-      const response = await fetch('http://localhost:3000/api/students')
+      const response = await fetch('https://trystudent-portal.onrender.com/api/students')
       const data = await response.json()
       
       if (data.success) {
